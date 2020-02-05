@@ -61,6 +61,7 @@ public class AdpPersona extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }//Llenamos nuestros TextView Con nuestros datos del list
+        //Asignamos le valores del item con el del list
         Persona currenPersona = personas.get(position);
         holder.nombreview.setText(currenPersona.getNombre());
         holder.idview.setText(String.valueOf(currenPersona.getId()));
